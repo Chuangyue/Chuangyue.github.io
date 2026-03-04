@@ -1,449 +1,658 @@
-<!DOCTYPE html><html lang="en">
-
+<!DOCTYPE html>
+<html lang="zh-CN">
 <head>
-
-    <meta charset="utf-8">
-
-    <title>CHUANGYUE Electronics LTD 创越</title>
-
-    <meta name="description" content="Description">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-
-    <link rel="icon" href="assets/img/logoo.jpg" type="image/x-icon">
-
-    <link rel="stylesheet" href="assets/css/libs.css">
-<link rel="stylesheet" href="assets/css/style.css">
-    <link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/istok-web-v15-latin/istok-web-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/montserrat-v15-latin/montserrat-v15-latin-600.woff2" as="font" type="font/woff2" crossorigin>
-
-<link rel="preload" href="assets/fonts/material-icons/material-icons.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/material-icons/material-icons-outlined.woff2" as="font" type="font/woff2" crossorigin>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>创越电子 | CHUANGYUE Electronics</title>
+    <meta name="description" content="常州市创越电子有限公司 - 为客户提供工业、半导体、医疗、汽车配套的线束产品和全方位连接解决方案">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Noto+Sans+SC:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#hero" class="nav-logo">
+                <img src="assets/images/logo.jpg" alt="创越电子" class="logo-img">
+                <div class="logo-text-wrap">
+                    <span class="logo-text">CHUANG YUE</span>
+                    <span class="logo-sub">创越电子</span>
+                </div>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#about" class="nav-link" data-zh="关于我们" data-en="About">关于我们</a></li>
+                <li><a href="#services" class="nav-link" data-zh="服务与能力" data-en="Services">服务与能力</a></li>
+                <li><a href="#applications" class="nav-link" data-zh="应用领域" data-en="Applications">应用领域</a></li>
+                <li><a href="#products" class="nav-link" data-zh="产品展示" data-en="Products">产品展示</a></li>
+                <li><a href="#supply-chain" class="nav-link" data-zh="供应链" data-en="Supply Chain">供应链</a></li>
+                <li><a href="#contact" class="nav-link" data-zh="联系我们" data-en="Contact">联系我们</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" aria-label="Switch Language">
+                    <span class="lang-zh">EN</span>
+                    <span class="lang-en" style="display:none">中</span>
+                </button>
+                <button class="nav-hamburger" id="navHamburger" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
 
-	<main class="main">
-		
-		<div class="main-inner">
-    <!-- Begin header fixed -->
-    <nav class="header-fixed">
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="hero-bg">
+            <div class="hero-particles" id="heroParticles"></div>
+        </div>
+        <div class="hero-content">
+            <div class="hero-badge" data-zh="成立于2015年 · IATF16949认证" data-en="Founded 2015 · IATF16949 Certified">成立于2015年 · IATF16949认证</div>
+            <h1 class="hero-title">
+                <span class="hero-title-main" data-zh="常州市创越电子有限公司" data-en="CHUANGYUE Electronics LTD.">常州市创越电子有限公司</span>
+            </h1>
+            <p class="hero-subtitle" data-zh="为客户提供工业、半导体、医疗、新能源、汽车配套的线束产品和全方位连接解决方案" data-en="Providing Cable Assembly and Connection Solutions for Industrial, Semi-conductor, Medical, Green Energy and Automobile Applications">为客户提供工业、半导体、医疗、新能源、汽车配套的线束产品和全方位连接解决方案</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="60">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label" data-zh="专业员工" data-en="Employees">专业员工</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="1500">0</span><span class="stat-suffix">m²</span>
+                    <span class="stat-label" data-zh="生产厂房" data-en="Production Space">生产厂房</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="20">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label" data-zh="主要客户" data-en="Key Customers">主要客户</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="2800">0</span><span class="stat-suffix" data-zh="万" data-en="W RMB">万</span>
+                    <span class="stat-label" data-zh="年销售额" data-en="Annual Revenue">年销售额</span>
+                </div>
+            </div>
+            <div class="hero-cta">
+                <a href="#contact" class="btn btn-primary" data-zh="联系我们" data-en="Contact Us">联系我们</a>
+                <a href="#about" class="btn btn-outline" data-zh="了解更多" data-en="Learn More">了解更多</a>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <span class="material-icons-outlined">expand_more</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
         <div class="container">
-            <div class="row flex-nowrap align-items-center justify-content-between">
-                <div class="col-auto d-block d-lg-none header-fixed-col">
-                    <div class="main-mnu-btn">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>
-                        <span class="bar bar-3"></span>
-                        <span class="bar bar-4"></span>
-                    </div>
-                </div>
-                <div class="col-auto header-fixed-col">
-                    <!-- Begin logo -->
-                    <a href="index.html" class="logo" title="Chuangyue">
-                        <img src="assets/img/logoo.jpg" width="115" height="36" alt="Chuangyue">
-                    </a><!-- End logo -->
-                </div>
-                <div class="col-auto header-fixed-col d-none d-lg-block col-static">
-                    <!-- Begin main menu -->
-<nav class="main-mnu">
-    <ul class="main-mnu-list">
-        <li><a href="index.html" data-title="Home / 主页"><span>Home / 主页</span></a></li>
-        <li><a href="about-us.html" data-title="About us / 关于我们"><span>About us / 关于我们</span></a></li>
-        <li><a href="services1.html" data-title="Services and Abilities / 服务与能力"><span>Services and Abilities / 服务与能力</span></a></li>
-        <li><a href="product1.html" data-title="Products / 产品"><span>Products / 产品</span></a></li>
-        <li><a href="re.html" data-title="Recruitments / 招聘"><span>Recruitments / 招聘</span></a></li>
-        <li><a href="contact-us.html" data-title="Contact Us / 联系我们"><span>Contact Us / 联系我们</span></a></li>
-    </ul>
-</nav><!-- End main menu -->
-                </div>
+            <div class="section-header">
+                <span class="section-tag" data-zh="关于我们" data-en="About Us">关于我们</span>
+                <h2 class="section-title" data-zh="值得信赖的连接解决方案合作伙伴" data-en="Your Trusted Connection Solution Partner">值得信赖的连接解决方案合作伙伴</h2>
             </div>
-        </div>
-    </nav><!-- End header fixed -->
-</header><!-- End header -->
 
-			<!-- Begin intro -->
-<div class="section-bgc intro">
-    <div class="intro-slider">
-        <div class="intro-item" style="background-image: url(assets/img/intro-img1.jpg);">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="intro-content">
-                            <div class="section-heading shm-none">
-                                <h1 style="font-size: 35px">CHUANGYUE
-                                    <br> 常州市创越电子有限公司
-                                </h1>
-                                <p class="section-desc">Provide Cable Assembly and Connection Solution for Industrial, semi-conductor, Medical and Automobile application.
-                                    <br></br>为客户提供工业、半导体、医疗、汽车配套的线束产品和
-                                    全方位连接解决方案。
-                                </p>
-                            </div>
-                            <div class="wrap-btn intro-btns">
-                                <a href="re.html" class="btn btn-with-icon btn-small ripple">
-                                    <span>招聘信息</span>
-                                    <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-                                </a>
-
-                                <a href="contact-us.html" class="btn btn-with-icon btn-border btn-small ripple">
-                                    <span>联系我们</span>
-                                    <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+            <!-- Company Intro Row -->
+            <div class="about-intro-row">
+                <div class="about-intro-img">
+                    <img src="assets/images/company/company-sign.png" alt="创越电子" loading="lazy">
                 </div>
-            </div>
-        </div>
-    </div>
-</div><!-- End intro -->
-
-			<!-- Begin services -->
-            <div class="section">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="section-heading heading-center">
-                                <h1>Our Service and Ability / 服务与能力</h1>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 item">
-                            <!-- Begin news item -->
-                            <article class="news-item item-style">
-                                <a href="qualitysystem9001.html" class="news-item-img">
-                                    <img data-src="assets/img/s1.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
-                                </a>
-                                <div class="news-item-info">
-                                    <h2 class="news-item-heading item-heading">
-                                        <a href="qualitysystem9001.html" title="Benefits Of Async/Await"> (ISO9001) Quality system / 质量系统</a>
-                                    </h2>
-                                    <div class="news-item-desc">
-                                        <p>为顾客提供优质的解决方案和服务，满足客户期望和要求。Provide high quality ...
-                                        </p>
-                                    </div>
-                                </div>
-                            </article><!-- End news item -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 item">
-                            <!-- Begin news item -->
-                            <article class="news-item item-style">
-                                <a href="qualitysystem9000.html" class="news-item-img">
-                                    <img data-src="assets/img/s2.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
-                                </a>
-                                <div class="news-item-info">
-                                    <h2 class="news-item-heading item-heading">
-                                        <a href="qualitysystem9000.html" title="Key Considerations Of IPaaS"> (ISO9000) Quality system / 质量系统</a>
-                                    </h2>
-                                    <div class="news-item-desc">
-                                        <p>重大安全环境事故：0
-                                            Serious Safety and Environmental Accidents 交付准时率 ... </p>
-                                    </div>
-                                </div>
-                            </article><!-- End news item -->
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-12 item">
-                            <!-- Begin news item -->
-                            <article class="news-item item-style">
-                                <a href="engineeringca.html" class="news-item-img">
-                                    <img data-src="assets/img/s3.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
-                                </a>
-                                <div class="news-item-info">
-                                    <h2 class="news-item-heading item-heading">
-                                        <a href="engineeringca.html" title="Hibernate Query Language">Engineering Capability / 工程能力123</a>
-                                    </h2>
-                                    <div class="news-item-desc">
-                                        <p>Reverse Engineering / 逆向工程
-                                            Equipment Harness routing Solution / 提供设备 ... </p>
-                                    </div>
-                                </div>
-                            </article><!-- End news item -->
-                        </div>
-                        <div class="col-12">
-                            <div class="section-btns justify-content-center">
-                                <a href="services1.html" class="btn btn-with-icon btn-w240 ripple">
-                                    <span>See All Services</span>
-                                    <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="about-intro-text">
+                    <p data-zh="常州市创越电子有限公司成立于2015年，坐落于江苏省常州市新北区，是一家专注于线束产品和连接解决方案的高科技企业。公司拥有1500平米现代化厂房，60余名专业员工，通过IATF16949质量体系认证，为工业、半导体、医疗、新能源和汽车等领域的客户提供卓越的产品和服务。" data-en="Founded in 2015 and located in Xinbei District, Changzhou, Jiangsu, China, CHUANGYUE Electronics is a high-tech enterprise specializing in cable assemblies and connection solutions. With a 1,500 sq. meter modern facility, 60+ professional staff, and IATF16949 certification, we deliver exceptional products and services to clients across industrial, semi-conductor, medical, green energy and automobile sectors.">常州市创越电子有限公司成立于2015年，坐落于江苏省常州市新北区，是一家专注于线束产品和连接解决方案的高科技企业。公司拥有1500平米现代化厂房，60余名专业员工，通过IATF16949质量体系认证，为工业、半导体、医疗、新能源和汽车等领域的客户提供卓越的产品和服务。</p>
                 </div>
             </div>
 
-        </div>
-
-			<!-- Begin advantages -->
-        <section class="section section-bgc">
-            <div class="container">
-                <div class="row items">
-                    <div class="col-12">
-                        <div class="section-heading heading-center">
-                            <h2>Our Marketing Strategy / 市场战略</h2>
-                            <br>
-                            <h5>Cable Assemblies and BOX Integration / 线缆装配和机柜组装
-                            </h5>
+            <!-- Highlights + Certificates Row -->
+            <div class="about-bottom-row">
+                <div class="about-highlights">
+                    <div class="about-highlight">
+                        <span class="material-icons-outlined">calendar_today</span>
+                        <div>
+                            <strong data-zh="成立于2015年" data-en="Founded in 2015">成立于2015年</strong>
+                            <span data-zh="深耕行业多年" data-en="Years of Industry Expertise">深耕行业多年</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 item">
-                        <div class="ini">
-                            <div class="ini-count">01</div>
-                            <div class="ini-info">
-                                <h3 class="ini-heading item-heading-large">Industrial / 工业</h3>
-                                <img src="assets/img/a2.png" style="width: 70%">
-                                <div class="ini-desc">
-                                    <br>
-                                    <p>Elevator / 电梯<br>
-                                        Semi-conductor / 半导体<br>
-                                        Equipment / 工业设备<br>
-                                        Instrument / 测量仪器<br>
-                                        Logistic & WH / 物流仓储
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="about-highlight">
+                        <span class="material-icons-outlined">verified</span>
+                        <div>
+                            <strong>IATF 16949</strong>
+                            <span data-zh="质量体系认证" data-en="Quality System Certified">质量体系认证</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 item">
-                        <div class="ini">
-                            <div class="ini-count">02</div>
-                            <div class="ini-info">
-                                <h3 class="ini-heading item-heading-large">Medical / 医疗</h3>
-                                <img src="assets/img/a3.png" style="width: 70%">
-                                <div class="ini-desc">
-                                    <br>
-                                    <p>Autoclave / 高温灭菌<br>
-                                        Dental Device / 牙科设备<br>
-                                        Ultrasound equipment
-                                        / 超声设备<br>
-                                        Medical Analysis Device<br>
-                                        / 医疗分析仪器
-                                    </p>
-                                </div>
-                            </div>
+                    <div class="about-highlight">
+                        <span class="material-icons-outlined">groups</span>
+                        <div>
+                            <strong data-zh="60+ 专业员工" data-en="60+ Professional Staff">60+ 专业员工</strong>
+                            <span data-zh="经验丰富的团队" data-en="Experienced Team">经验丰富的团队</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 item">
-                        <div class="ini">
-                            <div class="ini-count">03</div>
-                            <div class="ini-info">
-                                <h3 class="ini-heading item-heading-large">Automobile / 汽车</h3>
-                                <img src="assets/img/a4.png" style="width: 70%">
-                                <div class="ini-desc">
-                                    <br>
-                                    <p>Seat Sensor / 座椅传感器<br>
-                                        Battery pack / 电池包<br>
-                                        Lights / 氛围灯<br>
-                                        Transport Monitor / 运输监测</p>
-                                </div>
-                            </div>
+                    <div class="about-highlight">
+                        <span class="material-icons-outlined">warehouse</span>
+                        <div>
+                            <strong data-zh="1500m² 厂房" data-en="1500m² Facility">1500m² 厂房</strong>
+                            <span data-zh="现代化生产基地" data-en="Modern Production Base">现代化生产基地</span>
                         </div>
                     </div>
                 </div>
+                <div class="about-cert-row">
+                    <img src="assets/images/certificates/cert-en.png" alt="IATF16949 English" loading="lazy" class="cert-img">
+                    <img src="assets/images/certificates/cert-cn.png" alt="IATF16949 Chinese" loading="lazy" class="cert-img">
+                </div>
             </div>
-        </section><!-- End advantages -->
 
-			<!-- Begin counter section -->
-<!--<section class="section">-->
-<!--    <div class="container">-->
-<!--        <div class="row spincrement-container">-->
-<!--            <div class="col-xl-5 offset-xl-2 col-lg-6 offset-lg-1 col-12">-->
-<!--                <div class="main-counter">-->
-<!--                    <div class="main-counter-item">-->
-<!--                        <div class="main-counter-item-center">-->
-<!--                            <div>-->
-<!--                                <div class="main-counter-numb spincrement" data-from="0" data-to="8">0</div>-->
-<!--                                <div class="main-counter-heading">Years <br> Of Experience</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                        <div class="main-counter-item-circ"></div>-->
-<!--                    </div>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--            <div class="col-xl-4 offset-xl-1 col-lg-3 offset-lg-1 col-12 counter-items items">-->
-<!--                <div class="counter-item item">-->
-<!--                    <div class="counter-item-numb"><span class="spincrement" data-from="0" data-to="2">0</span>K</div>-->
-<!--                    <p class="counter-item-heading">Аpps Developed</p>-->
-<!--                </div>-->
-<!--                <div class="counter-item item">-->
-<!--                    <div class="counter-item-numb spincrement" data-from="0" data-to="40">0</div>-->
-<!--                    <p class="counter-item-heading">Consultans</p>-->
-<!--                </div>-->
-<!--                <div class="counter-item item">-->
-<!--                    <div class="counter-item-numb spincrement" data-from="0" data-to="160">0</div>-->
-<!--                    <p class="counter-item-heading">Employers</p>-->
-<!--                </div>-->
-<!--            </div>-->
-<!--        </div>-->
-<!--    </div>-->
-<!--</section>&lt;!&ndash; End counter section &ndash;&gt;-->
-
-			<!-- Begin reviews -->
-			<!-- Begin latest news -->
-        <div class="section">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="section-heading heading-center">
-                            <h1>Our Product / 产品</h1>
+            <!-- Global Customers -->
+            <div class="customers-section">
+                <h3 class="subsection-title" data-zh="全球客户网络" data-en="Global Customer Network">全球客户网络</h3>
+                <div class="customers-map-row">
+                    <div class="customers-map">
+                        <img src="assets/images/company/world-map.png" alt="Global customers" loading="lazy">
+                        <div class="map-labels">
+                            <span class="map-label map-label-eu" data-zh="欧洲" data-en="Europe">欧洲</span>
+                            <span class="map-label map-label-us" data-zh="美国" data-en="USA">美国</span>
+                            <span class="map-label map-label-cn" data-zh="中国" data-en="China">中国</span>
                         </div>
                     </div>
-                    <div class="col-lg-4 col-md-6 col-12 item">
-                        <!-- Begin news item -->
-                        <article class="news-item item-style">
-                            <a href="integrationboxbuild.html" class="news-item-img">
-                                <img data-src="assets/img/p1.jpg" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
-                            </a>
-                            <div class="news-item-info">
-                                <h2 class="news-item-heading item-heading">
-                                    <a href="integrationboxbuild.html" title="Benefits Of Async/Await">  Integration Box build / 集成系统组装</a>
-                                </h2>
-                                <div class="news-item-desc">
-                                    <p>集成系统组装：包括电源控制模块，信号控制模块，空气开关接线，接线端子布线 ...
-                                    </p>
-                                </div>
-                            </div>
-                        </article><!-- End news item -->
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 item">
-                        <!-- Begin news item -->
-                        <article class="news-item item-style">
-                            <a href="integrationaccessory.html" class="news-item-img">
-                                <img data-src="assets/img/p2.png" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
-                            </a>
-                            <div class="news-item-info">
-                                <h2 class="news-item-heading item-heading">
-                                    <a href="integrationaccessory.html" title="Key Considerations Of IPaaS"> Integration Accessory / 机柜配套周边</a>
-                                </h2>
-                                <div class="news-item-desc">
-                                    <p>机柜配套周边: 机柜周边配套用线，控制单元组装，气管配套服务，内部布线组装 ... </p>
-                                </div>
-                            </div>
-                        </article><!-- End news item -->
-                    </div>
-                    <div class="col-lg-4 col-md-6 col-12 item">
-                        <!-- Begin news item -->
-                        <article class="news-item item-style">
-                            <a href="industrialwireharness.html" class="news-item-img">
-                                <img data-src="assets/img/iwh6.jpg" class="lazy" src="data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII=" alt="">
-                            </a>
-                            <div class="news-item-info">
-                                <h2 class="news-item-heading item-heading">
-                                    <a href="industrialwireharness.html" title="Hibernate Query Language">Industrial Wire Harness / 工业线束</a>
-                                </h2>
-                                <div class="news-item-desc">
-                                    <p>创越为工业线束制作1：1的组装模板，以保证满足客户安装要求的布线方式和长度
-                                        ... </p>
-                                </div>
-                            </div>
-                        </article><!-- End news item -->
-                    </div>
-                    <div class="col-12">
-                        <div class="section-btns justify-content-center">
-                            <a href="product1.html" class="btn btn-with-icon btn-w240 ripple">
-                                <span>See All Products</span>
-                                <svg class="btn-icon-right" viewBox="0 0 13 9" width="13" height="9"><use xlink:href="assets/img/sprite.svg#arrow-right"></use></svg>
-                            </a>
-                        </div>
+                    <div class="customer-logos-grid">
+                        <img src="assets/images/customers/tomra.png" alt="TOMRA" loading="lazy">
+                        <img src="assets/images/customers/datwyler.png" alt="Datwyler" loading="lazy">
+                        <img src="assets/images/customers/getinge.png" alt="Getinge" loading="lazy">
+                        <img src="assets/images/customers/mahr.png" alt="Mahr" loading="lazy">
+                        <img src="assets/images/customers/wika.png" alt="WIKA" loading="lazy">
+                        <img src="assets/images/customers/dematic.png" alt="Dematic" loading="lazy">
+                        <img src="assets/images/customers/antolin.png" alt="Antolin" loading="lazy">
+                        <img src="assets/images/customers/rct-power.png" alt="RCT Power" loading="lazy">
+                        <img src="assets/images/customers/sc-solar.png" alt="SC Solar" loading="lazy">
+                        <img src="assets/images/customers/jacobs.png" alt="Jacobs" loading="lazy">
+                        <img src="assets/images/customers/yiruike.png" alt="易锐科" loading="lazy">
+                        <span class="customer-text-logo" data-zh="今日清洗" data-en="JinRi Cleaning">今日清洗</span>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
 
-        </div>
-
-<!-- Begin footer -->
-<footer class="footer">
-    <div class="footer-main">
+    <!-- Services Section -->
+    <section class="section services" id="services">
         <div class="container">
-            <div class="row items">
-                <div class="col-xl-3 col-lg-3 col-md-5 col-12 item">
-                    <!-- Begin company info -->
-                    <div class="footer-company-info">
-                        <div class="footer-company-top">
-                            <a href="index.html" class="logo" title="Chuangyue" style="font-size: 20px;">
-                                常州创越电子有限公司
-                            </a>
-                            <div class="footer-company-desc">
-                                <p>Provide Cable Assembly and Connection Solution for Industrial, semi-conductor, Medical and Automobile application.
-                                    <br></br>为客户提供工业、半导体、医疗、汽车配套的线束产品和
-                                    全方位连接解决方案。</p>
+            <div class="section-header">
+                <span class="section-tag" data-zh="服务与能力" data-en="Services & Capabilities">服务与能力</span>
+                <h2 class="section-title" data-zh="全方位的专业能力" data-en="Comprehensive Professional Capabilities">全方位的专业能力</h2>
+            </div>
+
+            <!-- Quality + Engineering: Feature Block -->
+            <div class="svc-feature-block">
+                <div class="svc-feature-visual">
+                    <div class="svc-quality-metrics">
+                        <div class="metric-ring">
+                            <div class="metric-ring-inner">
+                                <span class="metric-value">98%</span>
+                                <span class="metric-label" data-zh="准时交付" data-en="On-time Delivery">准时交付</span>
+                            </div>
+                        </div>
+                        <div class="metric-ring">
+                            <div class="metric-ring-inner">
+                                <span class="metric-value">0</span>
+                                <span class="metric-label" data-zh="客户投诉" data-en="Complaints">客户投诉</span>
+                            </div>
+                        </div>
+                        <div class="metric-ring">
+                            <div class="metric-ring-inner">
+                                <span class="metric-value">≥90</span>
+                                <span class="metric-label" data-zh="客户满意度" data-en="Satisfaction">客户满意度</span>
+                            </div>
+                        </div>
+                        <div class="metric-ring">
+                            <div class="metric-ring-inner">
+                                <span class="metric-value">≤1%</span>
+                                <span class="metric-label" data-zh="不良损失率" data-en="Defect Rate">不良损失率</span>
                             </div>
                         </div>
                     </div>
-                    <!-- End company info -->
                 </div>
-                <div class="col-xl-4 offset-xl-1 col-md-5 col-12 col-lg-2 item">
-                    <div class="footer-item">
-                        <p class="footer-item-heading">Menu</p>
-                        <nav class="footer-nav">
-                            <ul class="footer-mnu">
-                                <li><a href="index.html" class="hover-link" data-title="Home / 主页"><span>Home / 主页</span></a></li>
-                                <li><a href="about-us.html" class="hover-link" data-title="About us / 关于我们"><span>About us / 关于我们</span></a></li>
-                                <li><a href="services1.html" class="hover-link" data-title="Services and Abilities / 服务与能力"><span>Services and Abilities / 服务与能力</span></a></li>
-                                <li><a href="product1.html" class="hover-link"  data-title="Products / 产品"><span>Products / 产品</span></a></li>
-                                <li><a href="re.html"  class="hover-link" data-title="Recruitments / 招聘"><span>Recruitments / 招聘</span></a></li>
-                                <li><a href="contact-us.html" class="hover-link" data-title="Contact Us / 联系我们"><span>Contact Us / 联系我们</span></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <div class="col-xs-4 col-lg-4 col-12 item">
-                    <div class="footer-item">
-                        <p class="footer-item-heading">Our contacts</p>
-                        <ul class="footer-contacts">
-                            <li>
-                                <i class="material-icons md-22">location_on</i>
-                                <div class="footer-contact-info">
-                                    江苏常州新北区汉江路73号
-                                </div>
-                            </li>
-                            <li>
-                                <i class="material-icons md-22 footer-contact-tel">smartphone</i>
-                                <div class="footer-contact-info">
-                                    <a href="#!" class="formingHrefTel">13961123150</a>, <a href="#!" class="formingHrefTel">邰女士</a>
-                                </div>
-                            </li>
-                            <li>
-                                <i class="material-icons md-22 footer-contact-email">email</i>
-                                <div class="footer-contact-info">
-                                    <a href="mailto:mail@example.com">hr001@chuangyue-group.com</a>
-                                </div>
-                            </li>
-                        </ul>
+                <div class="svc-feature-info">
+                    <div class="svc-feature-badge">IATF 16949:2016</div>
+                    <h3 data-zh="质量体系与工程能力" data-en="Quality System & Engineering">质量体系与工程能力</h3>
+                    <p data-zh="创越电子通过IATF16949质量管理体系认证，始终坚持零事故、零投诉的质量目标，交付PPM≤100。" data-en="CHUANGYUE is IATF16949 certified with a zero-accident, zero-complaint quality target and delivery PPM ≤100.">创越电子通过IATF16949质量管理体系认证，始终坚持零事故、零投诉的质量目标，交付PPM≤100。</p>
+                    <div class="svc-feature-list">
+                        <div class="svc-feature-item">
+                            <span class="material-icons-outlined">build</span>
+                            <span data-zh="定制线缆线束加工服务" data-en="Custom Cable/Harness Assembly">定制线缆线束加工服务</span>
+                        </div>
+                        <div class="svc-feature-item">
+                            <span class="material-icons-outlined">developer_board</span>
+                            <span data-zh="设备布线方案 & 逆向工程" data-en="Harness Routing Solution & Reverse Engineering">设备布线方案 & 逆向工程</span>
+                        </div>
+                        <div class="svc-feature-item">
+                            <span class="material-icons-outlined">cable</span>
+                            <span data-zh="D-sub, M8/M12系列, 传感器连接器" data-en="D-sub, M8/M12 Series, Sensor Connectors">D-sub, M8/M12系列, 传感器连接器</span>
+                        </div>
+                        <div class="svc-feature-item">
+                            <span class="material-icons-outlined">straighten</span>
+                            <span data-zh="线材范围：4/0AWG 到 32AWG" data-en="Wire Gauge: 4/0AWG to 32AWG">线材范围：4/0AWG 到 32AWG</span>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <!-- Capability Cards: Image on top, text below -->
+            <div class="svc-showcase svc-showcase-grid">
+
+                <!-- Equipment -->
+                <div class="svc-card" data-autoplay="4000">
+                    <div class="svc-card-img">
+                        <img src="assets/images/production/production-line.jpg" class="svc-card-bg active" alt="Equipment">
+                        <img src="assets/images/equipment/crimp-machine.png" class="svc-card-bg" alt="Crimp Machine">
+                        <img src="assets/images/equipment/section-analyzer.png" class="svc-card-bg" alt="Analyzer">
+                        <img src="assets/images/equipment/pull-test.jpg" class="svc-card-bg" alt="Pull Test">
+                    </div>
+                    <div class="svc-card-thumbs">
+                        <img src="assets/images/production/production-line.jpg" class="svc-thumb active" alt="">
+                        <img src="assets/images/equipment/crimp-machine.png" class="svc-thumb" alt="">
+                        <img src="assets/images/equipment/section-analyzer.png" class="svc-thumb" alt="">
+                        <img src="assets/images/equipment/pull-test.jpg" class="svc-thumb" alt="">
+                    </div>
+                    <div class="svc-card-caption">
+                        <h3 data-zh="设备能力" data-en="Equipment Capability">设备能力</h3>
+                        <p data-zh="自动切线剥皮机、剥皮打端一体机、自动端子压接机、拉力测试仪、端子截面分析仪、导通测试仪" data-en="Auto cut/strip, strip/crimp, auto crimp, pull test, section analyzer, continuity tester">自动切线剥皮机、剥皮打端一体机、自动端子压接机、拉力测试仪、端子截面分析仪、导通测试仪</p>
+                    </div>
+                </div>
+
+                <!-- Molding -->
+                <div class="svc-card" data-autoplay="5000">
+                    <div class="svc-card-img">
+                        <img src="assets/images/molding/molding-1.jpg" class="svc-card-bg active" alt="Molding">
+                        <img src="assets/images/equipment/mold-machine.png" class="svc-card-bg" alt="Mold Machine">
+                        <img src="assets/images/products/molded-cable.png" class="svc-card-bg" alt="Molded Cable">
+                        <img src="assets/images/products/m12-connector.png" class="svc-card-bg" alt="M12 Connector">
+                    </div>
+                    <div class="svc-card-thumbs">
+                        <img src="assets/images/molding/molding-1.jpg" class="svc-thumb active" alt="">
+                        <img src="assets/images/equipment/mold-machine.png" class="svc-thumb" alt="">
+                        <img src="assets/images/products/molded-cable.png" class="svc-thumb" alt="">
+                        <img src="assets/images/products/m12-connector.png" class="svc-thumb" alt="">
+                    </div>
+                    <div class="svc-card-caption">
+                        <h3 data-zh="注塑能力" data-en="Molding Capability">注塑能力</h3>
+                        <p data-zh="4周产品开发、15分钟快速换模、关键公差&lt;0.1mm、CPK&gt;1.33" data-en="4 weeks development, 15 min changeover, tolerance &lt;0.1mm, CPK &gt;1.33">4周产品开发、15分钟快速换模、关键公差&lt;0.1mm、CPK&gt;1.33</p>
+                    </div>
+                </div>
+
+                <!-- Prototyping -->
+                <div class="svc-card" data-autoplay="4500">
+                    <div class="svc-card-img">
+                        <img src="assets/images/production/workspace.png" class="svc-card-bg active" alt="Prototyping">
+                        <img src="assets/images/prototyping/prototyping-tools.png" class="svc-card-bg" alt="Prototyping Tools">
+                        <img src="assets/images/prototyping/crimp-tool.png" class="svc-card-bg" alt="Crimp Tool">
+                        <img src="assets/images/prototyping/terminal-machine.png" class="svc-card-bg" alt="Terminal Machine">
+                    </div>
+                    <div class="svc-card-thumbs">
+                        <img src="assets/images/production/workspace.png" class="svc-thumb active" alt="">
+                        <img src="assets/images/prototyping/prototyping-tools.png" class="svc-thumb" alt="">
+                        <img src="assets/images/prototyping/crimp-tool.png" class="svc-thumb" alt="">
+                        <img src="assets/images/prototyping/terminal-machine.png" class="svc-thumb" alt="">
+                    </div>
+                    <div class="svc-card-caption">
+                        <h3 data-zh="快速打样 & 技术规范" data-en="Prototyping & Technical Standards">快速打样 & 技术规范</h3>
+                        <p data-zh="从设计到样品快速响应，符合IPC620标准，100%电气测试和检验" data-en="Rapid design-to-sample, IPC620 compliant, 100% electrical test and inspection">从设计到样品快速响应，符合IPC620标准，100%电气测试和检验</p>
+                    </div>
+                </div>
+
+                <!-- Smart Manufacturing -->
+                <div class="svc-card" data-autoplay="5500">
+                    <div class="svc-card-img">
+                        <img src="assets/images/production/smart-system.png" class="svc-card-bg active" alt="Smart Manufacturing">
+                        <img src="assets/images/production/smart-system-0.png" class="svc-card-bg" alt="Smart System Dashboard">
+                        <img src="assets/images/production/smart-system-1.png" class="svc-card-bg" alt="Smart System Monitor">
+                        <img src="assets/images/production/smart-system-6.png" class="svc-card-bg" alt="Smart System Overview">
+                    </div>
+                    <div class="svc-card-thumbs">
+                        <img src="assets/images/production/smart-system.png" class="svc-thumb active" alt="">
+                        <img src="assets/images/production/smart-system-1.png" class="svc-thumb" alt="">
+                        <img src="assets/images/production/smart-system-6.png" class="svc-thumb" alt="">
+                    </div>
+                    <div class="svc-card-caption">
+                        <h3 data-zh="智能制造系统" data-en="Smart Manufacturing System">智能制造系统</h3>
+                        <p data-zh="数字化生产管理，实时KPI监控，全流程品质追溯" data-en="Digital production management, real-time KPI monitoring, full quality traceability">数字化生产管理，实时KPI监控，全流程品质追溯</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
-    <div class="footer-bottom">
+    </section>
+
+    <!-- Applications / Market Strategy -->
+    <section class="section applications" id="applications">
         <div class="container">
-            <div class="row justify-content-between items">
-                <div class="col-md-auto col-12 item">
-                    <nav class="footer-links">
-                        <ul>
-                            <li><a href="index.html">条款和条件</a></li>
-                            <li><a href="index.html">隐私政策</a></li>
-                        </ul>
-                    </nav>
+            <div class="section-header">
+                <span class="section-tag" data-zh="应用领域" data-en="Applications">应用领域</span>
+                <h2 class="section-title" data-zh="市场战略 · 终端场景应用" data-en="Marketing Strategy · Application Scenarios">市场战略 · 终端场景应用</h2>
+                <p class="section-desc" data-zh="线缆装配和机柜组装 — 覆盖工业、医疗、新能源、汽车、分拣等多个高端应用领域" data-en="Cable Assemblies and BOX Integration — Covering industrial, medical, green energy, automotive, sorting and more">线缆装配和机柜组装 — 覆盖工业、医疗、新能源、汽车、分拣等多个高端应用领域</p>
+            </div>
+
+            <div class="app-tabs">
+                <button class="app-tab active" data-target="app-industrial">
+                    <span class="material-icons-outlined">factory</span>
+                    <span data-zh="工业 & 电梯" data-en="Industrial & Elevator">工业 & 电梯</span>
+                </button>
+                <button class="app-tab" data-target="app-medical">
+                    <span class="material-icons-outlined">local_hospital</span>
+                    <span data-zh="医疗" data-en="Medical">医疗</span>
+                </button>
+                <button class="app-tab" data-target="app-energy">
+                    <span class="material-icons-outlined">bolt</span>
+                    <span data-zh="新能源" data-en="Green Energy">新能源</span>
+                </button>
+                <button class="app-tab" data-target="app-auto">
+                    <span class="material-icons-outlined">directions_car</span>
+                    <span data-zh="汽车" data-en="Automobile">汽车</span>
+                </button>
+                <button class="app-tab" data-target="app-sorting">
+                    <span class="material-icons-outlined">sort</span>
+                    <span data-zh="分拣" data-en="Sorting">分拣</span>
+                </button>
+            </div>
+
+            <!-- Industrial & Elevator -->
+            <div class="app-panel active" id="app-industrial">
+                <div class="app-panel-content">
+                    <div class="app-info">
+                        <h3 data-zh="工业 & 电梯" data-en="Industrial & Elevator">工业 & 电梯</h3>
+                        <div class="app-tags-list">
+                            <span data-zh="电梯" data-en="Elevator">电梯</span>
+                            <span data-zh="半导体" data-en="Semi-conductor">半导体</span>
+                            <span data-zh="工业设备" data-en="Equipment">工业设备</span>
+                            <span data-zh="测量仪器" data-en="Instrument">测量仪器</span>
+                            <span data-zh="物流仓储" data-en="Logistics & WH">物流仓储</span>
+                            <span data-zh="传感设备" data-en="Sensor">传感设备</span>
+                        </div>
+                        <p data-zh="依照移动需求设计电梯，从高层建筑到购物中心，提供电梯产品为各种类型的住宅和商业建筑提供可靠的移动解决方案。工业线束通过导线和连接器实现电子设备间的电力供应和数据传输，是现代工业自动化和智能化的基础支撑。" data-en="Designing elevators for mobility needs, from high-rise buildings to shopping centers. Industrial harnesses enable power supply and data transmission between electronic devices through conductors and connectors, serving as the foundation for modern industrial automation.">依照移动需求设计电梯，从高层建筑到购物中心，提供电梯产品为各种类型的住宅和商业建筑提供可靠的移动解决方案。工业线束通过导线和连接器实现电子设备间的电力供应和数据传输，是现代工业自动化和智能化的基础支撑。</p>
+                    </div>
+                    <div class="app-gallery">
+                        <img src="assets/images/industrial/elevator-1.jpg" alt="Elevator" loading="lazy">
+                        <img src="assets/images/industrial/elevator-2.jpg" alt="Elevator" loading="lazy">
+                        <img src="assets/images/industrial/industrial-1.png" alt="Industrial" loading="lazy">
+                        <img src="assets/images/industrial/industrial-2.png" alt="Industrial" loading="lazy">
+                    </div>
                 </div>
-                <div class="col-md-auto col-12 item">
-                    <div class="copyright">© 2022 Copyright. All rights reserved.</div>
+            </div>
+
+            <!-- Medical -->
+            <div class="app-panel" id="app-medical">
+                <div class="app-panel-content">
+                    <div class="app-info">
+                        <h3 data-zh="医疗" data-en="Medical">医疗</h3>
+                        <div class="app-tags-list">
+                            <span data-zh="高温灭菌" data-en="Autoclave">高温灭菌</span>
+                            <span data-zh="牙科设备" data-en="Dental Device">牙科设备</span>
+                            <span data-zh="超声设备" data-en="Ultrasound">超声设备</span>
+                            <span data-zh="医疗分析仪器" data-en="Medical Analysis">医疗分析仪器</span>
+                        </div>
+                        <p data-zh="为重症监护室、手术室和心内科提供创新技术和解决方案。产品涵盖重症系统、体外循环、手术床、手术无影灯、吊塔以及完整的手术室净化解决方案。在医疗卫生领域提供清洁、消毒及灭菌等产品和服务，为感染控制提供创新解决方案。" data-en="Providing innovative technologies and solutions for ICUs, operating rooms and cardiology departments. Products include critical care systems, extracorporeal circulation, surgical tables, surgical lights, ceiling pendants and complete OR purification solutions. Delivering cleaning, disinfection and sterilization products for infection control.">为重症监护室、手术室和心内科提供创新技术和解决方案。产品涵盖重症系统、体外循环、手术床、手术无影灯、吊塔以及完整的手术室净化解决方案。在医疗卫生领域提供清洁、消毒及灭菌等产品和服务，为感染控制提供创新解决方案。</p>
+                    </div>
+                    <div class="app-gallery">
+                        <img src="assets/images/medical/medical-1.png" alt="Medical" loading="lazy">
+                        <img src="assets/images/medical/medical-2.png" alt="Medical" loading="lazy">
+                        <img src="assets/images/medical/medical-3.png" alt="Medical" loading="lazy">
+                        <img src="assets/images/medical/medical-4.png" alt="Medical" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Green Energy -->
+            <div class="app-panel" id="app-energy">
+                <div class="app-panel-content">
+                    <div class="app-info">
+                        <h3 data-zh="新能源" data-en="Green Energy">新能源</h3>
+                        <div class="app-tags-list">
+                            <span data-zh="储能系统" data-en="Energy Storage">储能系统</span>
+                            <span data-zh="光伏设备" data-en="Solar Industry">光伏设备</span>
+                            <span data-zh="智能清洁机器人" data-en="Clean Robot">智能清洁机器人</span>
+                        </div>
+                        <p data-zh="在储能系统领域处于领先地位，致力于为客户提供最优的储能系统解决方案及安全高效的储能系统全系列产品，涵盖户用储能系统（RESS）、工商业储能系统（CESS）和电网储能系统（GESS）。新能源是一种可再生的清洁能源，以新技术和新材料为基础，用取之不尽的可再生能源取代资源有限的化石能源。" data-en="Leading in energy storage systems, providing optimal energy storage solutions and safe, efficient product lines covering Residential (RESS), Commercial & Industrial (CESS), and Grid Energy Storage Systems (GESS). Green energy represents renewable clean energy based on new technologies and materials.">在储能系统领域处于领先地位，致力于为客户提供最优的储能系统解决方案及安全高效的储能系统全系列产品，涵盖户用储能系统（RESS）、工商业储能系统（CESS）和电网储能系统（GESS）。新能源是一种可再生的清洁能源，以新技术和新材料为基础，用取之不尽的可再生能源取代资源有限的化石能源。</p>
+                    </div>
+                    <div class="app-gallery">
+                        <img src="assets/images/green-energy/energy-1.png" alt="Green Energy" loading="lazy">
+                        <img src="assets/images/green-energy/energy-3.png" alt="Green Energy" loading="lazy">
+                        <img src="assets/images/green-energy/energy-6.png" alt="Green Energy" loading="lazy">
+                        <img src="assets/images/green-energy/energy-5.jpg" alt="Green Energy" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Automobile -->
+            <div class="app-panel" id="app-auto">
+                <div class="app-panel-content">
+                    <div class="app-info">
+                        <h3 data-zh="汽车" data-en="Automobile">汽车</h3>
+                        <div class="app-tags-list">
+                            <span data-zh="汽车氛围灯" data-en="Car Lights">汽车氛围灯</span>
+                            <span data-zh="运输监测" data-en="Transport Monitor">运输监测</span>
+                            <span data-zh="座椅传感器" data-en="Seat Sensor">座椅传感器</span>
+                        </div>
+                        <p data-zh="汽车线束是汽车电路的网络主体，具有耐热、耐油、耐冷等特性，同时富有柔软性。专注于汽车照明产品的研发，提供从概念到成品的一站式服务。产品涉及品牌显示灯、情绪灯、信息灯、交互灯、音乐律动灯及安全指示灯等。" data-en="Automotive harnesses form the network body of vehicle circuits, featuring heat resistance, oil resistance, and cold resistance with flexibility. Specialized in automotive lighting R&D, providing one-stop service from concept to finished product, including brand display lights, mood lights, interactive lights, and safety indicator lights.">汽车线束是汽车电路的网络主体，具有耐热、耐油、耐冷等特性，同时富有柔软性。专注于汽车照明产品的研发，提供从概念到成品的一站式服务。产品涉及品牌显示灯、情绪灯、信息灯、交互灯、音乐律动灯及安全指示灯等。</p>
+                    </div>
+                    <div class="app-gallery">
+                        <img src="assets/images/automotive/auto-1.jpg" alt="Automobile" loading="lazy">
+                        <img src="assets/images/automotive/auto-5.jpg" alt="Automobile" loading="lazy">
+                        <img src="assets/images/automotive/auto-7.jpg" alt="Automobile" loading="lazy">
+                        <img src="assets/images/automotive/auto-8.jpg" alt="Automobile" loading="lazy">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sorting -->
+            <div class="app-panel" id="app-sorting">
+                <div class="app-panel-content">
+                    <div class="app-info">
+                        <h3 data-zh="分拣" data-en="Sorting">分拣</h3>
+                        <div class="app-tags-list">
+                            <span data-zh="光学分选" data-en="Optical Sorting">光学分选</span>
+                            <span data-zh="食品行业" data-en="Food Industry">食品行业</span>
+                            <span data-zh="仓库自动化" data-en="Warehouse Automation">仓库自动化</span>
+                        </div>
+                        <p data-zh="全球领先的光学分选和蒸汽去皮技术，致力于为食品行业提供全方位的解决方案，包括基于传感的分选设备和蒸汽去皮设备等。全面的整箱拣选解决方案组合，能够满足最苛刻的业务需求，从低成本的手动方案到全自动系统，最大限度地提高仓库效率和可靠性。" data-en="World-leading optical sorting and steam peeling technology, providing comprehensive solutions for the food industry including sensor-based sorting and steam peeling equipment. Complete full-case picking solution portfolio meeting the most demanding business needs, from low-cost manual solutions to fully automated systems.">全球领先的光学分选和蒸汽去皮技术，致力于为食品行业提供全方位的解决方案，包括基于传感的分选设备和蒸汽去皮设备等。全面的整箱拣选解决方案组合，能够满足最苛刻的业务需求，从低成本的手动方案到全自动系统，最大限度地提高仓库效率和可靠性。</p>
+                    </div>
+                    <div class="app-gallery">
+                        <img src="assets/images/sorting/sorting-1.jpg" alt="Sorting" loading="lazy">
+                        <img src="assets/images/sorting/sorting-3.png" alt="Sorting" loading="lazy">
+                        <img src="assets/images/sorting/sorting-4.jpg" alt="Sorting" loading="lazy">
+                        <img src="assets/images/sorting/sorting-5.png" alt="Sorting" loading="lazy">
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-</footer><!-- End footer -->
+    </section>
 
-	</main><!-- End main -->
+    <!-- Products Section -->
+    <section class="section products" id="products">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-zh="产品展示" data-en="Products">产品展示</span>
+                <h2 class="section-title" data-zh="创越产品" data-en="Our Products">创越产品</h2>
+            </div>
+            <div class="products-grid">
+                <div class="product-card product-card-img">
+                    <div class="product-card-photo">
+                        <img src="assets/images/products/integration-box.jpg" alt="Integration Box" loading="lazy">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 data-zh="集成系统组装" data-en="Integration Box Build">集成系统组装</h3>
+                        <p data-zh="包括电源控制模块，信号控制模块，空气开关接线，接线端子布线等完整集成系统组装服务。" data-en="Complete integration assembly including power control modules, signal control modules, air switch wiring, terminal block wiring, and more.">包括电源控制模块，信号控制模块，空气开关接线，接线端子布线等完整集成系统组装服务。</p>
+                    </div>
+                </div>
+                <div class="product-card product-card-img">
+                    <div class="product-card-photo">
+                        <img src="assets/images/products/elevator-harness.png" alt="Elevator Harness" loading="lazy">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 data-zh="电梯线束" data-en="Elevator Harness">电梯线束</h3>
+                        <p data-zh="为电梯系统提供定制化线束产品，1:1的组装模板，保证满足客户安装要求的布线方式和长度。" data-en="Customized harness products for elevator systems with 1:1 assembly templates ensuring routing and length meet installation requirements.">为电梯系统提供定制化线束产品，1:1的组装模板，保证满足客户安装要求的布线方式和长度。</p>
+                    </div>
+                </div>
+                <div class="product-card product-card-img">
+                    <div class="product-card-photo">
+                        <img src="assets/images/products/industrial-harness.png" alt="Green Energy Cable" loading="lazy">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 data-zh="新能源线束" data-en="Green Energy Cable">新能源线束</h3>
+                        <p data-zh="为储能系统、光伏设备等新能源领域提供高品质线束解决方案。" data-en="High-quality cable solutions for energy storage systems, solar equipment and other green energy applications.">为储能系统、光伏设备等新能源领域提供高品质线束解决方案。</p>
+                    </div>
+                </div>
+                <div class="product-card product-card-img">
+                    <div class="product-card-photo">
+                        <img src="assets/images/products/auto-cable.png" alt="Automobile Cable" loading="lazy">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 data-zh="汽车线束" data-en="Automobile Cable">汽车线束</h3>
+                        <p data-zh="为汽车座椅传感器、电池包、氛围灯、运输监测等汽车应用提供专业线束产品。" data-en="Professional harness products for automotive seat sensors, battery packs, ambient lighting, and transport monitoring applications.">为汽车座椅传感器、电池包、氛围灯、运输监测等汽车应用提供专业线束产品。</p>
+                    </div>
+                </div>
+                <div class="product-card product-card-img">
+                    <div class="product-card-photo">
+                        <img src="assets/images/products/medical-cable.png" alt="Medical Cable" loading="lazy">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 data-zh="医疗线束" data-en="Medical Cable">医疗线束</h3>
+                        <p data-zh="为医疗设备提供符合医疗标准的高品质线束，覆盖灭菌、牙科、超声等细分领域。" data-en="High-quality medical-grade harnesses for healthcare equipment covering sterilization, dental, ultrasound and more.">为医疗设备提供符合医疗标准的高品质线束，覆盖灭菌、牙科、超声等细分领域。</p>
+                    </div>
+                </div>
+                <div class="product-card product-card-img">
+                    <div class="product-card-photo">
+                        <img src="assets/images/products/harness-template.png" alt="Industrial Harness" loading="lazy">
+                    </div>
+                    <div class="product-card-body">
+                        <h3 data-zh="工业线束" data-en="Industrial Harness">工业线束</h3>
+                        <p data-zh="创越为工业线束制作1：1的组装模板，以保证满足客户安装要求的布线方式和长度。" data-en="1:1 assembly templates for industrial harnesses, ensuring routing methods and lengths meet customer installation requirements.">创越为工业线束制作1：1的组装模板，以保证满足客户安装要求的布线方式和长度。</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-	<script src="assets/libs/jquery/jquery.min.js"></script>
-<script src="assets/libs/lozad/lozad.min.js"></script>
-<script src="assets/libs/device/device.js"></script>
-<script src="assets/libs/ScrollToFixed/jquery-scrolltofixed-min.js"></script>
-<script src="assets/libs/spincrement/jquery.spincrement.min.js"></script>
-<script src="assets/libs/jquery-validation-1.19.3/jquery.validate.min.js"></script>
-<script src="assets/js/custom.js"></script>
-	
-</body></html>
+    <!-- Supply Chain -->
+    <section class="section supply-chain" id="supply-chain">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-zh="供应链" data-en="Supply Chain">供应链</span>
+                <h2 class="section-title" data-zh="完善的供应链体系" data-en="Complete Supply Chain System">完善的供应链体系</h2>
+                <p class="section-desc" data-zh="从原材料采购到成品交付，创越电子建立了完善的供应链管理体系，确保产品质量与交付效率。" data-en="From raw material procurement to finished product delivery, CHUANGYUE has established a comprehensive supply chain management system ensuring quality and delivery efficiency.">从原材料采购到成品交付，创越电子建立了完善的供应链管理体系，确保产品质量与交付效率。</p>
+            </div>
+            <div class="supply-flow">
+                <div class="supply-step" data-aos="fade-right">
+                    <div class="supply-icon">
+                        <span class="material-icons-outlined">inventory_2</span>
+                    </div>
+                    <h4 data-zh="原材料管理" data-en="Material Management">原材料管理</h4>
+                    <p data-zh="严格的供应商筛选与来料检验体系" data-en="Strict supplier selection and incoming inspection system">严格的供应商筛选与来料检验体系</p>
+                </div>
+                <div class="supply-arrow">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                <div class="supply-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="supply-icon">
+                        <span class="material-icons-outlined">precision_manufacturing</span>
+                    </div>
+                    <h4 data-zh="生产制造" data-en="Manufacturing">生产制造</h4>
+                    <p data-zh="智能制造系统与精益生产管理" data-en="Smart manufacturing and lean production management">智能制造系统与精益生产管理</p>
+                </div>
+                <div class="supply-arrow">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                <div class="supply-step" data-aos="fade-right" data-aos-delay="200">
+                    <div class="supply-icon">
+                        <span class="material-icons-outlined">fact_check</span>
+                    </div>
+                    <h4 data-zh="质量控制" data-en="Quality Control">质量控制</h4>
+                    <p data-zh="100%电气测试与IPC620标准检验" data-en="100% electrical testing & IPC620 standard inspection">100%电气测试与IPC620标准检验</p>
+                </div>
+                <div class="supply-arrow">
+                    <span class="material-icons-outlined">arrow_forward</span>
+                </div>
+                <div class="supply-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="supply-icon">
+                        <span class="material-icons-outlined">local_shipping</span>
+                    </div>
+                    <h4 data-zh="物流交付" data-en="Logistics & Delivery">物流交付</h4>
+                    <p data-zh="98%准时交付率，全球客户服务" data-en="98% on-time delivery rate, global customer service">98%准时交付率，全球客户服务</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag" data-zh="联系我们" data-en="Contact Us">联系我们</span>
+                <h2 class="section-title" data-zh="期待与您合作" data-en="Looking Forward to Working With You">期待与您合作</h2>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span class="material-icons-outlined">location_on</span>
+                    </div>
+                    <h4 data-zh="公司地址" data-en="Address">公司地址</h4>
+                    <p data-zh="江苏省常州市新北区汉江路73号" data-en="No.73 Hanjiang Road, Xinbei District, Changzhou, Jiangsu, China">江苏省常州市新北区汉江路73号</p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span class="material-icons-outlined">phone</span>
+                    </div>
+                    <h4 data-zh="联系电话" data-en="Phone">联系电话</h4>
+                    <p>13961123150</p>
+                    <span class="contact-person" data-zh="邰女士" data-en="Ms. Tai">邰女士</span>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span class="material-icons-outlined">mail</span>
+                    </div>
+                    <h4 data-zh="人事邮箱" data-en="HR Email">人事邮箱</h4>
+                    <p><a href="mailto:hr001@chuangyue-group.com">hr001@chuangyue-group.com</a></p>
+                </div>
+                <div class="contact-card">
+                    <div class="contact-icon">
+                        <span class="material-icons-outlined">sell</span>
+                    </div>
+                    <h4 data-zh="销售联系" data-en="Sales Contact">销售联系</h4>
+                    <p><a href="mailto:YD@chuangyue-group.com">YD@chuangyue-group.com</a></p>
+                    <span class="contact-person" data-zh="丁先生" data-en="Mr. Ding">丁先生</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="footer-logo-row">
+                        <img src="assets/images/logo.jpg" alt="创越电子" class="footer-logo-img">
+                        <span class="footer-logo">CHUANG YUE</span>
+                    </div>
+                    <p data-zh="常州市创越电子有限公司" data-en="Changzhou City CHUANGYUE Electronics LTD.">常州市创越电子有限公司</p>
+                    <p class="footer-slogan" data-zh="为客户提供工业、半导体、医疗、新能源、汽车配套的线束产品和全方位连接解决方案。" data-en="Providing cable assembly and connection solutions for industrial, semi-conductor, medical, green energy and automobile applications.">为客户提供工业、半导体、医疗、新能源、汽车配套的线束产品和全方位连接解决方案。</p>
+                </div>
+                <div class="footer-links">
+                    <h4 data-zh="快速导航" data-en="Quick Links">快速导航</h4>
+                    <a href="#about" data-zh="关于我们" data-en="About Us">关于我们</a>
+                    <a href="#services" data-zh="服务与能力" data-en="Services">服务与能力</a>
+                    <a href="#applications" data-zh="应用领域" data-en="Applications">应用领域</a>
+                    <a href="#products" data-zh="产品展示" data-en="Products">产品展示</a>
+                    <a href="#contact" data-zh="联系我们" data-en="Contact">联系我们</a>
+                </div>
+                <div class="footer-cert">
+                    <h4 data-zh="认证资质" data-en="Certifications">认证资质</h4>
+                    <div class="cert-badges">
+                        <div class="cert-badge">IATF 16949</div>
+                        <div class="cert-badge">IPC 620</div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 CHUANGYUE Electronics LTD. <span data-zh="版权所有" data-en="All Rights Reserved">版权所有</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
